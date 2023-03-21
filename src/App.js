@@ -1,10 +1,12 @@
-import './App.css';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
+// import React from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import './App.css';
 import SchedList from './components/SchedList';
 import Semester from './components/Semester';
-import {BrowserRouter, Switch, Route} from 'react-router-dom';
+import Student from './components/Student'
 
 function App() {
   return (
@@ -20,6 +22,7 @@ function App() {
        <Switch>
         <Route exact path='/' component={Semester} />
         <Route path='/schedule' component={SchedList} />
+        <Route path='/student' component={Student} />
        </Switch>
       </BrowserRouter>
     </div>
