@@ -102,13 +102,9 @@ class Student extends Component {
               <MenuItem value={10}>10</MenuItem>
             </Select>
           </FormControl>
-          {/* <TextField
-            id="student_statusCode"
-            label="Status Code"
-            inputProps={{ inputMode: 'numeric', pattern: '[0-9]*' }}
-            onChange={(e) => this.setState({ studentStatusCode: e.target.value })}
-          /> */}
+
           <Button
+            id="btnAddStudent"
             variant="outlined"
             color="primary"
             style={{ margin: 10 }}
@@ -118,9 +114,6 @@ class Student extends Component {
         </div>
         <Grid container>
           <Grid item>
-            {/* <ButtonGroup>
-                  <AddCourse addCourse={this.addCourse}  />
-				</ButtonGroup> */}
           </Grid>
         </Grid>
         <ToastContainer autoClose={1500} />
